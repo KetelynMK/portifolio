@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ketelyn Assis — Desenvolvedora Python & Cloud</title>
+
+  <!-- Fontes: Playfair Display (display) + DM Sans (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Brilhos decorativos de fundo -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- ========================
+       MENU MOBILE
+  ======================== -->
+  <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <button id="mobile-close" aria-label="Fechar menu">✕</button>
+    <a href="#sobre" onclick="closeMobile()">Sobre</a>
+    <a href="#habilidades" onclick="closeMobile()">Habilidades</a>
+    <a href="#experiencia" onclick="closeMobile()">Experiência</a>
+    <a href="#formacao" onclick="closeMobile()">Formação</a>
+    <a href="#projetos" onclick="closeMobile()">Projetos</a>
+    <a href="#contato" onclick="closeMobile()">Contato</a>
+  </div>
+
+  <!-- ========================
+       NAVEGAÇÃO
+  ======================== -->
+  <nav aria-label="Navegação principal">
+    <a href="#hero" class="nav-logo">K<span>.</span>Assis</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+    </ul>
+    <a href="#contato" class="nav-cta">Contato</a>
+    <button class="nav-burger" id="burger" aria-label="Abrir menu">☰</button>
+  </nav>
+
+  <!-- ========================
+       HERO
+  ======================== -->
+  <section id="hero" aria-label="Apresentação">
+    <div>
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Disponível para oportunidades
+      </div>
+
+      <h1 class="hero-name">
+        <span class="line-1">Ketelyn</span>
+        <span class="line-2">Assis</span>
+      </h1>
+
+      <p class="hero-role">
+        <span id="typed-role" class="typewriter"></span>
+      </p>
+
+      <div class="hero-tags">
+        <span class="hero-tag">Python</span>
+        <span class="hero-tag">AWS</span>
+        <span class="hero-tag">Azure</span>
+        <span class="hero-tag">Google Cloud</span>
+        <span class="hero-tag">DevOps Jr.</span>
+        <span class="hero-tag">APIs REST</span>
+        <span class="hero-tag">Automação</span>
+        <span class="hero-tag">SQL</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <a href="#contato" class="btn-secondary">Entre em contato</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========================
+       SOBRE
+  ======================== -->
+  <section id="sobre">
+    <div class="section-inner">
+      <!-- Visual / Card -->
+      <div class="sobre-visual reveal">
+        <div class="sobre-card-main">
+          <div class="avatar-placeholder" aria-hidden="true">KA</div>
+          <div class="sobre-info-name">Ketelyn Assis</div>
+          <div class="sobre-info-role">Desenvolvedora Python &amp; Cloud</div>
+
+          <div class="divider-line"></div>
+
+          <div class="sobre-stats">
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Plataformas cloud</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Anos de experiência</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">AZ</span>
+              <span class="stat-label">Microsoft Azure 900</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">SP</span>
+              <span class="stat-label">Santana de Parnaíba</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges flutuantes decorativos -->
+        <div class="floating-badge floating-badge-1" aria-hidden="true">
+          <div class="badge-dot"></div>
+          <span>Python &amp; Automação</span>
+        </div>
+        <div class="floating-badge floating-badge-2" aria-hidden="true">
+          <div class="badge-dot badge-dot-red"></div>
+          <span>Cloud &amp; DevOps</span>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="sobre-text reveal">
+        <span class="section-label">Sobre mim</span>
+        <h2 class="section-title" style="font-size:2rem;">Desenvolvedora apaixonada por tecnologia e soluções em nuvem</h2>
+
+        <p>
+          Estudante de Análise e Desenvolvimento de Sistemas pela UNINOVE, com foco em desenvolvimento Python, automação de processos e computação em nuvem. Minha trajetória é marcada por aprendizado contínuo, projetos práticos e busca constante por crescimento profissional.
+        </p>
+        <p>
+          Possuo formação complementar em AWS, Microsoft Azure (AZ-900) e Google Cloud Foundations, com experiência prática em criação de ambientes cloud, máquinas virtuais e integração com APIs REST. Atualmente desenvolvo projetos freelance voltados para automação e aplicações em Python.
+        </p>
+        <p>
+          Tenho perfil proativo, facilidade de aprendizado e foco em resolução de problemas. Estou disponível para atuação remota ou presencial, e tenho interesse especial em crescimento nas áreas de desenvolvimento backend e DevOps.
+        </p>
+
+        <div class="sobre-links">
+          <a href="tel:+5511977308160" class="sobre-link" aria-label="Ligar para Ketelyn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +55 11 97730-8160
+          </a>
+          <a href="https://linkedin.com/in/ketelyn-assis-ab19b3201" target="_blank" rel="noopener noreferrer" class="sobre-link" aria-label="Perfil no LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:assiskety846@gmail.com" class="sobre-link" aria-label="Enviar e-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            E-mail
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       HABILIDADES
+  ======================== -->
+  <section id="habilidades">
+    <div class="section-inner">
+      <div class="skills-header reveal">
+        <span class="section-label">Competências técnicas</span>
+        <h2 class="section-title">Stack &amp; Ferramentas</h2>
+        <p class="section-subtitle">Conjunto de tecnologias com as quais trabalho no dia a dia, em projetos e estudos contínuos.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Desenvolvimento -->
+        <div class="skill-category cat-dev reveal">
+          <div class="skill-cat-icon icon-dev" aria-hidden="true">⌨️</div>
+          <div class="skill-cat-title">Linguagens &amp; Desenvolvimento</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">APIs REST</span>
+            <span class="skill-tag">Lógica de Programação</span>
+            <span class="skill-tag">Desenvolvimento Web</span>
+            <span class="skill-tag">Flask (estudo)</span>
+            <span class="skill-tag">Django (estudo)</span>
+          </div>
+        </div>
+
+        <!-- Banco de Dados -->
+        <div class="skill-category cat-db reveal">
+          <div class="skill-cat-icon icon-db" aria-hidden="true">🗄️</div>
+          <div class="skill-cat-title">Banco de Dados</div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Modelagem Relacional</span>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="skill-category cat-cloud reveal">
+          <div class="skill-cat-icon icon-cloud" aria-hidden="true">☁️</div>
+          <div class="skill-cat-title">Cloud Computing</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Amazon Web Services</span>
+            <span class="skill-tag">Microsoft Azure (AZ-900)</span>
+            <span class="skill-tag">Google Cloud</span>
+            <span class="skill-tag">IaaS / PaaS / SaaS</span>
+            <span class="skill-tag">Máquinas Virtuais</span>
+            <span class="skill-tag">Armazenamento em Nuvem</span>
+          </div>
+        </div>
+
+        <!-- Ferramentas -->
+        <div class="skill-category cat-tools reveal">
+          <div class="skill-cat-icon icon-tools" aria-hidden="true">🛠️</div>
+          <div class="skill-cat-title">Ferramentas &amp; Metodologias</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Automação de Processos</span>
+            <span class="skill-tag">Desenvolvimento SaaS</span>
+            <span class="skill-tag">Suporte Técnico</span>
+            <span class="skill-tag">DevOps Jr.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft skills -->
+      <div class="reveal" style="margin-top:3rem; text-align:center;">
+        <p class="section-label">Competências comportamentais</p>
+      </div>
+      <div class="softskills-row reveal">
+        <span class="soft-tag">Proatividade</span>
+        <span class="soft-tag">Organização</span>
+        <span class="soft-tag">Boa comunicação</span>
+        <span class="soft-tag">Facilidade de aprendizado</span>
+        <span class="soft-tag">Trabalho em equipe</span>
+        <span class="soft-tag">Raciocínio lógico</span>
+        <span class="soft-tag">Resolução de problemas</span>
+        <span class="soft-tag">Adaptabilidade</span>
+        <span class="soft-tag">Evolução contínua</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       EXPERIÊNCIA
+  ======================== -->
+  <section id="experiencia">
+    <div class="section-inner">
+      <div class="reveal" style="margin-bottom:3rem;">
+        <span class="section-label">Trajetória profissional</span>
+        <h2 class="section-title">Experiência</h2>
+        <p class="section-subtitle">Jornada de aprendizado e crescimento em diferentes ambientes profissionais.</p>
+      </div>
+
+      <div class="exp-layout reveal">
+        <!-- Abas de empresa -->
+        <div class="exp-tabs" role="tablist" aria-label="Experiências">
+          <button class="exp-tab active" role="tab" aria-selected="true" aria-controls="panel-freelancer" id="tab-freelancer" onclick="switchExp('freelancer')">
+            <span class="exp-tab-title">Freelancer</span>
+            <span class="exp-tab-period">2025 — atual</span>
+          </button>
+          <button class="exp-tab" role="tab" aria-selected="false" aria-controls="panel-nova" id="tab-nova" onclick="switchExp('nova')">
+            <span class="exp-tab-title">Nova Página</span>
+            <span class="exp-tab-period">nov. 2024 — nov. 2025</span>
+          </button>
+          <button class="exp-tab" role="tab" aria-selected="false" aria-controls="panel-meli" id="tab-meli" onclick="switchExp('meli')">
+            <span class="exp-tab-title">Mercado Livre</span>
+            <span class="exp-tab-period">ago. 2023 — ago. 2024</span>
+          </button>
+        </div>
+
+        <!-- Painéis de conteúdo -->
+        <div class="exp-content">
+
+          <!-- Freelancer -->
+          <div class="exp-panel active" id="panel-freelancer" role="tabpanel" aria-labelledby="tab-freelancer">
+            <div class="exp-header">
+              <div class="exp-role">Desenvolvedora &amp; Automação Freelancer</div>
+              <div class="exp-company">Projetos Independentes · Workana &amp; outras plataformas</div>
+              <div class="exp-period-loc">2025 – Atual · Remoto</div>
+            </div>
+            <div class="exp-divider"></div>
+            <ul class="exp-activities">
+              <li><div class="exp-bullet"></div><span>Desenvolvimento de aplicações em Python para automação de processos empresariais</span></li>
+              <li><div class="exp-bullet"></div><span>Criação e integração de APIs REST em projetos web e backend</span></li>
+              <li><div class="exp-bullet"></div><span>Desenvolvimento web com HTML5 para landing pages e interfaces</span></li>
+              <li><div class="exp-bullet"></div><span>Manipulação e modelagem de bancos de dados SQL (MySQL e PostgreSQL)</span></li>
+              <li><div class="exp-bullet"></div><span>Desenvolvimento de soluções em nuvem com AWS, Azure e Google Cloud</span></li>
+              <li><div class="exp-bullet"></div><span>Suporte técnico e melhoria contínua de sistemas existentes</span></li>
+              <li><div class="exp-bullet"></div><span>Aplicação de conceitos IaaS, PaaS e SaaS em projetos práticos</span></li>
+            </ul>
+          </div>
+
+          <!-- Nova Página -->
+          <div class="exp-panel" id="panel-nova" role="tabpanel" aria-labelledby="tab-nova">
+            <div class="exp-header">
+              <div class="exp-role">Aprendiz Administrativo</div>
+              <div class="exp-company">Nova Página Embalagens</div>
+              <div class="exp-period-loc">nov. 2024 – nov. 2025 · Cajamar – SP</div>
+            </div>
+            <div class="exp-divider"></div>
+            <ul class="exp-activities">
+              <li><div class="exp-bullet"></div><span>Suporte administrativo às equipes internas da empresa</span></li>
+              <li><div class="exp-bullet"></div><span>Organização e gerenciamento de arquivos e documentação</span></li>
+              <li><div class="exp-bullet"></div><span>Apoio operacional e controle de documentos corporativos</span></li>
+              <li><div class="exp-bullet"></div><span>Suporte interno para equipes administrativas em demandas diárias</span></li>
+              <li><div class="exp-bullet"></div><span>Desenvolvimento de habilidades organizacionais e resolução de problemas práticos</span></li>
+            </ul>
+          </div>
+
+          <!-- Mercado Livre -->
+          <div class="exp-panel" id="panel-meli" role="tabpanel" aria-labelledby="tab-meli">
+            <div class="exp-header">
+              <div class="exp-role">Jovem Aprendiz</div>
+              <div class="exp-company">Mercado Livre</div>
+              <div class="exp-period-loc">ago. 2023 – ago. 2024 · Araçariguama – SP</div>
+            </div>
+            <div class="exp-divider"></div>
+            <ul class="exp-activities">
+              <li><div class="exp-bullet"></div><span>Participação em atividades de integração e fortalecimento de equipe</span></li>
+              <li><div class="exp-bullet"></div><span>Suporte operacional em rotinas do setor</span></li>
+              <li><div class="exp-bullet"></div><span>Comunicação e alinhamento entre diferentes setores da empresa</span></li>
+              <li><div class="exp-bullet"></div><span>Apoio em rotinas administrativas do cotidiano</span></li>
+              <li><div class="exp-bullet"></div><span>Desenvolvimento de habilidades de trabalho em equipe e organização</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FORMAÇÃO
+  ======================== -->
+  <section id="formacao">
+    <div class="section-inner">
+      <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+        <span class="section-label">Educação</span>
+        <h2 class="section-title">Formação Acadêmica</h2>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon" aria-hidden="true">🎓</div>
+        <div>
+          <div class="edu-institution">UNINOVE</div>
+          <div class="edu-course">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
+          <div class="edu-period">nov. 2025 – nov. 2028 · Em andamento</div>
+          <div class="edu-subjects">
+            <span class="edu-subject">Python</span>
+            <span class="edu-subject">Programação lógica</span>
+            <span class="edu-subject">Desenvolvimento web</span>
+            <span class="edu-subject">Computação em nuvem</span>
+            <span class="edu-subject">Banco de dados</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificações Cloud -->
+      <div class="cloud-section reveal">
+        <p class="cloud-title">Certificações &amp; Formações complementares</p>
+        <div class="cloud-grid">
+          <div class="cloud-badge">
+            <div class="cloud-badge-icon" aria-hidden="true">☁️</div>
+            <div class="cloud-badge-name">Amazon Web Services</div>
+            <div class="cloud-badge-sub">AWS Foundations</div>
+          </div>
+          <div class="cloud-badge">
+            <div class="cloud-badge-icon" aria-hidden="true">🔷</div>
+            <div class="cloud-badge-name">Microsoft Azure</div>
+            <div class="cloud-badge-sub">AZ-900 Certified</div>
+          </div>
+          <div class="cloud-badge">
+            <div class="cloud-badge-icon" aria-hidden="true">🌐</div>
+            <div class="cloud-badge-name">Google Cloud</div>
+            <div class="cloud-badge-sub">Cloud Foundations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       PROJETOS
+  ======================== -->
+  <section id="projetos">
+    <div class="section-inner">
+      <div class="reveal">
+        <span class="section-label">Trabalhos independentes</span>
+        <h2 class="section-title">Projetos &amp; Freelances</h2>
+        <p class="section-subtitle">Soluções desenvolvidas de forma independente, aplicando tecnologias modernas e melhores práticas.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-card-glow glow-purple" aria-hidden="true"></div>
+          <div class="project-num">01</div>
+          <div class="project-title">Automação de Processos com Python</div>
+          <div class="project-desc">Scripts Python para automação de tarefas repetitivas em fluxos administrativos e operacionais, reduzindo tempo de execução e eliminando erros manuais.</div>
+          <div class="project-techs">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Automação</span>
+            <span class="project-tech">Scripts</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-glow glow-teal" aria-hidden="true"></div>
+          <div class="project-num">02</div>
+          <div class="project-title">Integração com APIs REST</div>
+          <div class="project-desc">Desenvolvimento de integrações entre sistemas distintos via APIs REST, incluindo autenticação, consumo de dados e transformação de payloads para diferentes destinos.</div>
+          <div class="project-techs">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">APIs REST</span>
+            <span class="project-tech">JSON</span>
+            <span class="project-tech">HTTP</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-glow glow-red" aria-hidden="true"></div>
+          <div class="project-num">03</div>
+          <div class="project-title">Soluções Web com HTML5</div>
+          <div class="project-desc">Criação de interfaces e landing pages responsivas para clientes, com foco em usabilidade e performance, entregues via plataformas freelance como Workana.</div>
+          <div class="project-techs">
+            <span class="project-tech">HTML5</span>
+            <span class="project-tech">CSS3</span>
+            <span class="project-tech">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-glow glow-amber" aria-hidden="true"></div>
+          <div class="project-num">04</div>
+          <div class="project-title">Aplicações Cloud</div>
+          <div class="project-desc">Criação e gerenciamento de ambientes cloud com AWS, Azure e Google Cloud: máquinas virtuais, armazenamento em nuvem e arquitetura de aplicações baseadas em IaaS/PaaS/SaaS.</div>
+          <div class="project-techs">
+            <span class="project-tech">AWS</span>
+            <span class="project-tech">Azure</span>
+            <span class="project-tech">Google Cloud</span>
+            <span class="project-tech">IaaS</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-glow glow-purple" aria-hidden="true"></div>
+          <div class="project-num">05</div>
+          <div class="project-title">Banco de Dados SQL</div>
+          <div class="project-desc">Modelagem e manipulação de bancos de dados relacionais para aplicações Python, incluindo queries complexas, joins e otimização de consultas em MySQL e PostgreSQL.</div>
+          <div class="project-techs">
+            <span class="project-tech">SQL</span>
+            <span class="project-tech">MySQL</span>
+            <span class="project-tech">PostgreSQL</span>
+            <span class="project-tech">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-glow glow-teal" aria-hidden="true"></div>
+          <div class="project-num">06</div>
+          <div class="project-title">Suporte Técnico &amp; DevOps</div>
+          <div class="project-desc">Melhoria contínua de sistemas com suporte técnico, versionamento com Git/GitHub e estudos aplicados em práticas DevOps para integração e entrega de software.</div>
+          <div class="project-techs">
+            <span class="project-tech">Git</span>
+            <span class="project-tech">GitHub</span>
+            <span class="project-tech">DevOps</span>
+            <span class="project-tech">CI/CD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       OBJETIVO / CTA
+  ======================== -->
+  <section id="contato" style="background: var(--bg-card); border-top: 1px solid var(--border);">
+    <div class="objetivo-inner">
+      <div class="objetivo-card reveal">
+        <span class="section-label">Objetivo profissional</span>
+        <h2 class="section-title" style="font-size:2rem; margin-top:0.5rem;">Pronta para o próximo desafio</h2>
+        <p>
+          Busco atuar como Desenvolvedora Python, DevOps Júnior ou em áreas relacionadas a desenvolvimento de software, infraestrutura e computação em nuvem. Interesse em contribuir com soluções eficientes, automação de processos e integração de sistemas, enquanto continuo evoluindo tecnicamente.
+        </p>
+        <p style="margin-top:0;">
+          Disponível para trabalho remoto ou presencial na região de Santana de Parnaíba – SP e Grande São Paulo.
+        </p>
+
+        <div class="contact-bar" style="margin:1.5rem 0;">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +55 11 97730-8160
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Santana de Parnaíba – SP
+          </div>
+        </div>
+
+        <div class="objetivo-actions">
+          <a href="tel:+5511977308160" class="btn-primary">📞 Ligar agora</a>
+          <a href="https://linkedin.com/in/ketelyn-assis-ab19b3201" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer>
+    <p>Desenvolvido com ♥ · <strong style="color:var(--text-muted)">Ketelyn Assis</strong> · Desenvolvedora Python &amp; Cloud · <a href="https://linkedin.com/in/ketelyn-assis-ab19b3201" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    <p style="margin-top:0.5rem; font-size:0.75rem; color:var(--text-dim)">Santana de Parnaíba – SP · +55 11 97730-8160</p>
+  </footer>
+
+  <!-- ========================
+       SCRIPTS
+  ======================== -->
+  <script>
+    /* ---- Cursor personalizado ---- */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    let mouseX = 0, mouseY = 0;
+    let ringX  = 0, ringY  = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cursor.style.left = mouseX - 6 + 'px';
+      cursor.style.top  = mouseY - 6 + 'px';
+    });
+
+    /* Anel segue com atraso suave */
+    function animateRing() {
+      ringX += (mouseX - ringX - 18) * 0.12;
+      ringY += (mouseY - ringY - 18) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top  = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    /* Efeito hover no cursor */
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'scale(2)';
+        ring.style.width  = '54px';
+        ring.style.height = '54px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'scale(1)';
+        ring.style.width  = '36px';
+        ring.style.height = '36px';
+      });
+    });
+
+    /* ---- Efeito de digitação (typewriter) ---- */
+    const roles = [
+      'Desenvolvedora Python',
+      'DevOps Júnior',
+      'Especialista em Automação',
+      'Engenheira Cloud',
+      'Integradora de APIs',
+    ];
+    let ri = 0, ci = 0, deleting = false;
+    const typedEl = document.getElementById('typed-role');
+
+    function type() {
+      const current = roles[ri];
+      if (!deleting) {
+        typedEl.textContent = current.slice(0, ci + 1);
+        ci++;
+        if (ci === current.length) { deleting = true; setTimeout(type, 2000); return; }
+      } else {
+        typedEl.textContent = current.slice(0, ci - 1);
+        ci--;
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+      }
+      setTimeout(type, deleting ? 50 : 90);
+    }
+    type();
+
+    /* ---- Reveal on scroll ---- */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          /* pequeno atraso escalonado por elemento irmão */
+          const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
+          const idx = siblings.indexOf(entry.target);
+          entry.target.style.transitionDelay = (idx * 0.08) + 's';
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    /* ---- Alternância de experiências (tabs) ---- */
+    function switchExp(id) {
+      document.querySelectorAll('.exp-tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.exp-panel').forEach(p => p.classList.remove('active'));
+
+      const tab   = document.getElementById('tab-' + id);
+      const panel = document.getElementById('panel-' + id);
+      if (tab)   { tab.classList.add('active');   tab.setAttribute('aria-selected', 'true'); }
+      if (panel) { panel.classList.add('active'); }
+    }
+
+    /* ---- Menu mobile ---- */
+    const mobileMenu = document.getElementById('mobile-menu');
+    document.getElementById('burger').addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+    document.getElementById('mobile-close').addEventListener('click', closeMobile);
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    /* ---- Navbar: escurece ao rolar ---- */
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.background = window.scrollY > 50
+        ? 'rgba(10,10,15,0.95)'
+        : 'rgba(10,10,15,0.7)';
+    });
+
+    /* ---- Partículas no hero (canvas leve) ---- */
+    (function() {
+      const canvas = document.createElement('canvas');
+      canvas.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:0;';
+      document.getElementById('hero').prepend(canvas);
+
+      const ctx = canvas.getContext('2d');
+      let W, H, particles = [];
+
+      function resize() {
+        W = canvas.width  = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      /* Cria 60 partículas */
+      for (let i = 0; i < 60; i++) {
+        particles.push({
+          x: Math.random() * 1200,
+          y: Math.random() * 900,
+          r: Math.random() * 1.5 + 0.5,
+          vx: (Math.random() - 0.5) * 0.2,
+          vy: (Math.random() - 0.5) * 0.2,
+          a: Math.random() * 0.5 + 0.1,
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(124,111,255,${p.a})`;
+          ctx.fill();
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0) p.x = W;
+          if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H;
+          if (p.y > H) p.y = 0;
+        });
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+</body>
+</html>
