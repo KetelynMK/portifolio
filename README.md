@@ -9,7 +9,7 @@
 
 ## 👩‍💻 Sobre o Projeto
 
-Este projeto consiste no desenvolvimento do meu **portfólio profissional**, criado com o objetivo de apresentar minhas habilidades, projetos e minha evolução na área de tecnologia.
+Este projeto consiste no desenvolvimento do meu **Portfólio Profissional**, criado com o objetivo de apresentar minhas habilidades, projetos e minha evolução na área de tecnologia.
 
 O portfólio foi desenvolvido utilizando **HTML5, CSS3 e JavaScript**, buscando criar uma interface moderna, organizada e responsiva, proporcionando uma boa experiência para usuários em diferentes dispositivos.
 
@@ -22,11 +22,6 @@ Pensando na melhor experiência do usuário, o projeto possui uma estrutura sepa
 ### 💻 Desktop
 A versão principal foi desenvolvida para computadores, aproveitando melhor o espaço da tela e organizando as informações de forma mais completa.
 
-### 📱 Mobile
-Foi criado um arquivo específico:
-
-```
-Mobile.html
 ```
 
 Esse arquivo possui uma estrutura adaptada para dispositivos móveis, permitindo uma organização diferente da versão desktop.
